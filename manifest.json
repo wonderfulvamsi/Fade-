@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Cookie Fucker",
+    "version": "1",
+    "description": "Cookie Fucker is to get rid of the annoying cookie popups that won't disappear until you accept them. Just hold 'f' key & click on the popup to get rid of them.",
+    "icons": {
+        "48": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "fucker.js"
+            ]
+        }
+    ]
+}
